@@ -1,0 +1,8 @@
+#!/bin/sh
+cat <<EOF
+This is a entos7-devtoolset-base image.
+
+Sample invocation:
+docker run -ti centos7-devtoolset-base /bin/bash
+EOF
+
