@@ -1,6 +1,6 @@
 #!/bin/sh
 
-tag="0.1"
+tag="0.2"
 image_name="centos7-devtoolset-base"
 echo "${image_name}:${tag}"
 

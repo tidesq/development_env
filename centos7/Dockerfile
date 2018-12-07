@@ -26,6 +26,9 @@ RUN yum clean all -y \
     && yum install -y openssl-devel \
     && yum install -y bazel \
     && yum install -y wget \
+    && yum install -y autoconf \
+    && yum install -y automake \
+    && yum install -y libtool \
     && yum clean all -y 
 
 
