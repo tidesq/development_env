@@ -1,7 +1,7 @@
 #!/bin/sh
 
 tag="0.1"
-image_name="entos7-devtoolset-base"
+image_name="centos7-devtoolset-base"
 echo "${image_name}:${tag}"
 
 docker build  -f Dockerfile -t ${image_name}:${tag} .

@@ -1,9 +1,11 @@
 #!/bin/sh
 
 tag="0.1"
-image_name="entos7-devtoolset-base"
+image_name="centos7-devtoolset-base"
 
 # --name=$USER 方便区分docker container, 否则container的名字将是随机的
 
 #sudo docker run -d --name=${USER} --net=host -u `id -u`:`id -g` -v /etc/passwd:/etc/passwd:ro -v /etc/shadow:/etc/shadow -v /etc/group:/etc/group -v ${HOME}:${HOME} -w `pwd` -it ${image_name}:${tag}   /bin/bash
-docker run -d --name=${USER} --net=host -u `id -u`:`id -g` -v /etc/passwd:/etc/passwd:ro -v /etc/shadow:/etc/shadow -v /etc/group:/etc/group -v ${HOME}:${HOME} -w `pwd` -it ${image_name}:${tag}   /bin/bash
+#docker run -d --name=${USER} --net=host -u "admin" -v /etc/passwd:/etc/passwd:ro -v /etc/shadow:/etc/shadow -v /etc/group:/etc/group -v ${HOME}:${HOME} -w `pwd` -it ${image_name}:${tag}   /bin/bash
+
+docker run -d --name=${USER} --net=host -u "admin:admin"  -v ${HOME}:${HOME} -w `pwd` -it ${image_name}:${tag}   /bin/bash
